@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>.\User;.\Libraries\STM32F4xx_HAL_Driver\Inc;.\APP;.\Public;.\Libraries\CMSIS;.\APP\led;.\APP\beep;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\touch_key;.\APP\rng;.\APP\wkup;.\APP\adc;.\APP\adc_temp;.\APP\lsens;.\APP\dac</IncludePath>
+              <IncludePath>.\User;.\Libraries\STM32F4xx_HAL_Driver\Inc;.\APP;.\Public;.\Libraries\CMSIS;.\APP\led;.\APP\beep;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\touch_key;.\APP\rng;.\APP\wkup;.\APP\adc;.\APP\adc_temp;.\APP\lsens;.\APP\dac;.\APP\vol</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -583,6 +583,16 @@
               <FileName>dac.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\APP\dac\dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\key\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>vol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\vol\vol.c</FilePath>
             </File>
           </Files>
         </Group>

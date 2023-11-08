@@ -22,7 +22,7 @@ int main(void)
     u32 adc_value=0;
     float dac_vol;
     float adc_vol;
-    u16 dacval=0;
+    int dacval=0;
     HAL_Init();                     //初始化HAL库 
 	SystemClock_Init(8,336,2,7);   //设置时钟,168Mhz
     SysTick_Init(168);
@@ -47,7 +47,7 @@ int main(void)
         else if(key==KEY0_PRESS)
         {
             dacval-=330;
-            if(dacval<0) dacval=0;
+            if(dacval<=0) dacval=0;
             Set_DAC_Vol(dacval);
         }
         
